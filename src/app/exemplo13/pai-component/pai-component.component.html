@@ -1,0 +1,7 @@
+<h1>Paii!!!</h1>
+<ul>
+    <li *ngFor='let f of familia'>
+        {{f.nome}} {{f.sobrenome}}
+    </li>
+</ul>
+<app-filho [recebeFamilia]="familia" (respostaFamilia)="receberFeedback($event)"></app-filho>
